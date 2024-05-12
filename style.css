@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    
+}
+
+.logo_alura{
+    width: 150px;
+    padding: 10px;
+    float: right;
+}
+
+.titulo_principal{
+    background: #297ae4;
+    padding: 70px;
+    color: #FFFFFF;
+    font-size: 50px;
+    margin: 0px 0px 0px 0px;
+    font-family: "Inter";
+}
+
+.body{
+    background: #297ae4;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: relative;
+}
+
+.encriptador{
+    display: flex;
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    right: 10%;
+    left: 5%;
+    top: 30%;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 150%;
+}
+
+.input-padron{
+    font-family: "Inter";
+    font-size: 25px;
+    color: #0A3871;
+    width: 50%;
+    height: 150%;
+    border-radius: 24px;
+    border: none;
+    text-align:center ;
+    font-weight: 500;
+
+}
+
+.input-padron:focus, .input-padron:active{
+    border: none;
+    outline: none;
+}
+
+.input-padron::placeholder{
+    color: #0A3871;
+    font-family: "Inter";
+}
+
+.encriptador-aviso{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 8%;
+    top: 108%;
+}
+
+.texto-aviso{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: white;
+    opacity: 60%;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.container_botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 50%;
+    left: 5%;
+    top: 112%;
+}
+
+.container_boton{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0c3871;
+    color: white ;
+    border-radius: 24px;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    font-family: "Inter";
+}
+
+.container_boton2{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 20px;
+    width: 25%;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 24px;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    font-family: "Inter";
+    margin-left: 20%;
+}
+
+.copybutton{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:center ;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #0A3871;
+    color: white ;
+    border-radius: 24px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid;
+    font-family: "Inter";
+    left: 55%;
+    display: none;
+}
+
+.container_boton:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+
+}
+
+.container_boton2:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+    margin-left: 20%;
+}
+
+.copybutton:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+    margin-left: 10%;
+}
+
+.tarj-container{
+    float: right;
+    display: flex;
+    justify-content: center;
+    position:absolute ;
+    width: 60%;
+    height: 190%;
+    /*background-color: beige;*/
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    font-family: "Inter";
+    left: 60%;
+    top:5%;
+
+}
+
+.mensaje-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2%;
+    gap: 1%;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    font-family: "Inter";
+    font-size:large;
+    text-align: center;
+    color: #0c3871;
+}
+
+.texto1{
+    color: #0A3871;
+    width: 100%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.img-busca{
+    float: right;
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top:auto;
+}
+
+.encriptado{
+    float: left;
+    margin-left: 8%;
+    margin-right: 8%;
+    top: 10%;
+    color: #0A3871;
+    width: 70%;
+    height: 60%;
+    border: none;
+    outline: none;
+    font-family: "Inter";
+    font-style:normal ;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+
+}
+
+@media (max-width: 57.5em) {
+
+    .logo_alura{
+        width: 18%;
+        top: 5%;
+        height: 10%;
+        left: 0%;
+    }
+    
+    .body{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .encriptador{
+        width: 80%;
+        top: 35%;
+    }
+
+    .encriptador-aviso{
+        top: 90%;;
+    }
+
+    .input-padron{
+        width: 100%;
+        height: 110%;
+    }
+
+    .tarj-container{
+        width: 100%;
+        height: 270%;
+        margin-top: 100%;
+        margin-left: -60%;
+    }
+
+    .img-busca{
+        width: 80%;
+        top: -5%;
+        margin-left: -5%;
+        /*display: none;
+        visibility: hidden;*/
+    }
+
+    .mensaje-encriptado{
+        width: 100%;
+        height: 100%;
+        top: 15%;
+        margin-left: -10%;
+    }
+    
+
+    .encriptado{
+        width: 10%;
+        height: 5%;
+        left: 10%;
+        top: 30%;
+        padding: 40%;
+        margin-top: 5%;
+    }
+    
+
+    .container_botones{
+        width: 70%;
+        height: 90%;
+        left: 8%;
+        top: 90%;
+        margin-top: 5%;
+    }
+
+    .container_boton{
+        width: 30%;
+        margin-left: 15%;
+        margin-left: 30%;
+        border-radius: 16px;
+    }
+
+    .container_boton2{
+        width: 30%;
+        margin-left: -30%;
+        border-radius: 16px;
+        margin-top: 10%;
+    }
+
+    .copybutton{
+        width: 30%;
+        margin-left: 15%;
+        border-radius: 16px;
+        margin-left: 5%;
+    }
+
+    .container_boton:hover{
+        margin: 0.3%;
+        width: 35%;
+        padding: 1.5%;
+        margin-left: 30%;
+    }
+
+    .container_boton2:hover{
+        margin: 0.3%;
+        width: 35%;
+        padding: 1.8%;
+        margin-left: -30%;
+        margin-top: 10%;
+    }
+
+    .copybutton:hover{
+        margin: 0.3%;
+        width: 35%;
+        padding: 1.8%;
+        margin-left: 15%;
+    }
+
+
+}
+

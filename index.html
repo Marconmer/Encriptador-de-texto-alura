@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js"></script>
+</head>
+
+<header>
+    <div class="box">
+        <img src="./img/alura_logo.png" alt="logo de alura en tono azul" class="logo_alura">
+        <h1 class="titulo_principal">Encriptador Alura</h1>
+    </div>
+</header>
+
+<body class="body">
+    <div class="encriptador">
+        <label for="textoaencriptar"></label>
+        <input type="text" id="textoAEncriptar" class="input-padron" required placeholder="Ingresa el texto a encriptar aquí">
+
+        <div class="tarj-container">
+            <img src="img/muñeco.png" alt="imagen muñeco buscando" class="img-busca" id="imgBusca">
+            <div class="mensaje-encriptado">
+                <h2 class="texto1" id="texto">Ningún mensaje fue encontrado</h2>
+                <textarea type="mensaje" cols="80" rows="10" class="encriptado" id="texto2" readonly> Ingrese el texto que deseas encriptar o desencriptar</textarea>
+                <button type="submit" onclick="copiar();" class="copybutton" id="copy">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="encriptador-aviso">
+        <img src="img/advertencia.png" alt="imagen aviso" class="img-aviso">
+        <p class="texto-aviso">Usar solo minúsculas y evitar acentos/caracteres especiales</p>
+    </div>
+    <div class="container_botones">
+        <button type="button" onclick="encriptar();" class="container_boton" id="encript">Encriptar</button>
+        <button type="submit"  onclick="desencriptar();" class="container_boton2" id="reiniciar">Desencriptar</button>
+    </div>
+
+
+
+        
+    
+
+
+
+</body>
